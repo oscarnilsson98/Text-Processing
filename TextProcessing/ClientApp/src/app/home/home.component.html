@@ -1,0 +1,25 @@
+
+  <div class="rp">
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 class="title">Text Processing</h1>
+      </div>
+    </div>
+  </div>
+
+  <div>
+
+    <div class="uploadcontainer row">
+      <form [formGroup]="uploadForm" (ngSubmit)="onSubmit()" class="col-12 row">
+
+        <div class="col-12 col-md-6 btnmargin">
+          <input type="file" name="profile" (change)="onFileSelect($event)">
+        </div>
+
+        <div class="col-12 col-md-6 btnmargin">
+          <button type="submit" class="upload-button"><span>Process File</span></button>
+        </div>
+      </form>
+    </div>
+
+  </div>
